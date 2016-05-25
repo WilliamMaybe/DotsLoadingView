@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         let loadingView = DotsLoadingView()
         view.addSubview(loadingView)
         loadingView.center = view.center
+        
+        loadingView.dotWidth = 20
+        loadingView.startLoading()
     }
 
     override func didReceiveMemoryWarning() {
